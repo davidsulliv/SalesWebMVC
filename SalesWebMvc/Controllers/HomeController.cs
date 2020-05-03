@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SalesWebMvc.Models;
+using SalesWebMvc.Models.ViewModels;
 
 namespace SalesWebMvc.Controllers
 {
@@ -18,8 +18,7 @@ namespace SalesWebMvc.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Sales Web MVC from C# Course";
-            ViewData["aluno"] = "Davidson Sullivan";
-            ViewData["email"] = "sullivan.davidson@gmail.com";
+            ViewData["Aluno"] = "Davidson Sullivan";
 
             return View();
         }
